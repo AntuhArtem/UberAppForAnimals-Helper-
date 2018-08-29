@@ -20,6 +20,7 @@
 		83926A45212AFAE0000C0DAB /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83926A44212AFAE0000C0DAB /* AuthProvider.swift */; };
 		83C1ABC8213419BF00E1026E /* DBReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1ABC7213419BF00E1026E /* DBReference.swift */; };
 		83C1ABCA213419F000E1026E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C1ABC9213419F000E1026E /* Constants.swift */; };
+		83D417D02135FE9C007651C6 /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D417CF2135FE9C007651C6 /* UberHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		83926A44212AFAE0000C0DAB /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		83C1ABC7213419BF00E1026E /* DBReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBReference.swift; sourceTree = "<group>"; };
 		83C1ABC9213419F000E1026E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83D417CF2135FE9C007651C6 /* UberHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
 		CC3E8B98BABF54BB92FC8BE6 /* Pods-Uber App For Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber App For Driver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber App For Driver/Pods-Uber App For Driver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				83926A44212AFAE0000C0DAB /* AuthProvider.swift */,
 				83C1ABC7213419BF00E1026E /* DBReference.swift */,
 				83C1ABC9213419F000E1026E /* Constants.swift */,
+				83D417CF2135FE9C007651C6 /* UberHandler.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				832CCDCA211CA2E100F5DCE4 /* SignInVC.swift in Sources */,
 				832B733021334FB10095750C /* DriverVC.swift in Sources */,
 				83C1ABC8213419BF00E1026E /* DBReference.swift in Sources */,
+				83D417D02135FE9C007651C6 /* UberHandler.swift in Sources */,
 				837572292113B17600190DFD /* AppDelegate.swift in Sources */,
 				83C1ABCA213419F000E1026E /* Constants.swift in Sources */,
 			);
