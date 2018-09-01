@@ -7,17 +7,11 @@ target 'Uber App For Driver' do
 
   # Pods for Uber App For Driver
     pod 'Firebase'
+    pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Storage'
     pod 'Firebase/Database'
-    pod 'Firebase/AdMob'
-    pod 'Firebase/Analytics'
-    pod 'Firebase/Crash'
-    pod 'Firebase/DynamicLinks'
-    pod 'Firebase/Invites'
     pod 'Firebase/Messaging'
-    pod 'Firebase/Performance'
-    pod 'Firebase/RemoteConfig'
 
 
 end

@@ -68,16 +68,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		832CCDC6211CA2B800F5DCE4 /* Model */ = {
+		8326EFCD213A0BB200473C0D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				837572282113B17600190DFD /* AppDelegate.swift */,
+				8375722F2113B17800190DFD /* Assets.xcassets */,
+				837572312113B17800190DFD /* LaunchScreen.storyboard */,
 			);
-			path = Model;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		832CCDC7211CA2BD00F5DCE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8375722C2113B17600190DFD /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +98,8 @@
 		8375721C2113B17600190DFD = {
 			isa = PBXGroup;
 			children = (
+				837210622132BC5600D227D2 /* GoogleService-Info-2.plist */,
+				837572342113B17800190DFD /* Info.plist */,
 				837572272113B17600190DFD /* Uber App For Driver */,
 				837572262113B17600190DFD /* Products */,
 				8C886B16E4AD96D8E19B86FA /* Pods */,
@@ -115,13 +121,7 @@
 				83926A43212AFAC6000C0DAB /* Plugins */,
 				832CCDC8211CA2C100F5DCE4 /* Controller */,
 				832CCDC7211CA2BD00F5DCE4 /* View */,
-				832CCDC6211CA2B800F5DCE4 /* Model */,
-				837572282113B17600190DFD /* AppDelegate.swift */,
-				8375722C2113B17600190DFD /* Main.storyboard */,
-				8375722F2113B17800190DFD /* Assets.xcassets */,
-				837572312113B17800190DFD /* LaunchScreen.storyboard */,
-				837572342113B17800190DFD /* Info.plist */,
-				837210622132BC5600D227D2 /* GoogleService-Info-2.plist */,
+				8326EFCD213A0BB200473C0D /* Supporting Files */,
 			);
 			path = "Uber App For Driver";
 			sourceTree = "<group>";
@@ -129,12 +129,36 @@
 		83926A43212AFAC6000C0DAB /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				83926A44212AFAE0000C0DAB /* AuthProvider.swift */,
-				83C1ABC7213419BF00E1026E /* DBReference.swift */,
-				83C1ABC9213419F000E1026E /* Constants.swift */,
-				83D417CF2135FE9C007651C6 /* UberHandler.swift */,
+				83B0DE56213A0C5F005E7033 /* Providers */,
+				83B0DE58213A0C9E005E7033 /* Constants */,
+				83B0DE57213A0C86005E7033 /* Handlers */,
 			);
 			path = Plugins;
+			sourceTree = "<group>";
+		};
+		83B0DE56213A0C5F005E7033 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				83926A44212AFAE0000C0DAB /* AuthProvider.swift */,
+				83C1ABC7213419BF00E1026E /* DBReference.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		83B0DE57213A0C86005E7033 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				83D417CF2135FE9C007651C6 /* UberHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		83B0DE58213A0C9E005E7033 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				83C1ABC9213419F000E1026E /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		8C886B16E4AD96D8E19B86FA /* Pods */ = {
@@ -158,7 +182,6 @@
 				837572222113B17600190DFD /* Frameworks */,
 				837572232113B17600190DFD /* Resources */,
 				29D5D5A2DA6757D9A4CF9533 /* [CP] Embed Pods Frameworks */,
-				3BAA2167DB86AE7FFC2F77A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,10 +247,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Uber App For Driver/Pods-Uber App For Driver-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -235,10 +255,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -247,28 +264,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber App For Driver/Pods-Uber App For Driver-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BAA2167DB86AE7FFC2F77A0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Uber App For Driver/Pods-Uber App For Driver-resources.sh",
-				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
-				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber App For Driver/Pods-Uber App For Driver-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		927BCE2B2270ACF3A0253954 /* [CP] Check Pods Manifest.lock */ = {
@@ -449,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BXA39294KR;
-				INFOPLIST_FILE = "Uber App For Driver/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BXA39294KR;
-				INFOPLIST_FILE = "Uber App For Driver/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
