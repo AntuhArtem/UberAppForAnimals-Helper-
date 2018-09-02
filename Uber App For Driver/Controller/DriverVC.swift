@@ -21,8 +21,9 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
     
     
     @IBOutlet weak var myMap: MKMapView!
-    
+//    @IBOutlet weak var acceptUberBtn: UIButton!
     @IBOutlet weak var acceptUberBtn: UIButton!
+    
     private var locationManager = CLLocationManager()
     private var userLocation: CLLocationCoordinate2D?
     private var riderLocation: CLLocationCoordinate2D?

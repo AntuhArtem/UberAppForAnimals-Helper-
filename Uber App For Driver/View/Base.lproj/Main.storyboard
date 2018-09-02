@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xCi-LL-eWN"/>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rdD-W6-YL9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmu-vX-aBq">
@@ -52,7 +52,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBP-IA-gsI"/>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bu-Rp-zgO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,14 +60,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="emailTextField" destination="M9r-zw-7RE" id="xU5-T0-s8i"/>
-                        <outlet property="passwordTextField" destination="gH5-EM-zR3" id="0qs-QD-2ED"/>
+                        <outlet property="emailTextField" destination="M9r-zw-7RE" id="Jep-ej-kXM"/>
+                        <outlet property="passwordTextField" destination="gH5-EM-zR3" id="aNj-9e-AQK"/>
                         <segue destination="myT-7x-qHR" kind="show" identifier="DriverVC" id="NtW-aV-msd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-350" y="134"/>
+            <point key="canvasLocation" x="-351.19999999999999" y="133.5832083958021"/>
         </scene>
         <!--DriverVC-->
         <scene sceneID="qWh-d5-JeK">
@@ -98,17 +98,14 @@
                                 <rect key="frame" x="145" y="397" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel Uber"/>
-                                <connections>
-                                    <action selector="cancelUber:" destination="myT-7x-qHR" eventType="touchUpInside" id="kj1-fE-T5A"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="XQf-VZ-tx0"/>
                     </view>
                     <connections>
-                        <outlet property="acceptUberBtn" destination="bh5-ZN-bTT" id="ryn-ds-R0y"/>
-                        <outlet property="myMap" destination="xeD-gY-fzB" id="7U0-H3-mai"/>
+                        <outlet property="acceptUberBtn" destination="bh5-ZN-bTT" id="4AS-j5-H9x"/>
+                        <outlet property="myMap" destination="xeD-gY-fzB" id="3ua-XA-LKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAa-fO-Khu" userLabel="First Responder" sceneMemberID="firstResponder"/>
