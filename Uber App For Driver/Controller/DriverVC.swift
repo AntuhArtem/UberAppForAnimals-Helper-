@@ -21,7 +21,6 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
     
     
     @IBOutlet weak var myMap: MKMapView!
-//    @IBOutlet weak var acceptUberBtn: UIButton!
     @IBOutlet weak var acceptUberBtn: UIButton!
     
     private var locationManager = CLLocationManager()
@@ -118,7 +117,7 @@ class DriverVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, 
             timer.invalidate()
         }
     }
-    
+//
     @IBAction func logOut(_ sender: Any) {
         if AuthProvider.Instance.logOut() {
             if acceptedUber {

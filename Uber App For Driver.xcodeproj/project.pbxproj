@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4DCE99D2ABF6183FD0653A31 /* Pods_Uber_App_For_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8485A9D1641963B1A3FDB0 /* Pods_Uber_App_For_Driver.framework */; };
+		832B4875213C26800055E8AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 832B4874213C267F0055E8AB /* GoogleService-Info.plist */; };
+		832B487A213C45050055E8AB /* RoundedButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B4879213C45050055E8AB /* RoundedButtons.swift */; };
 		832B733021334FB10095750C /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832B732F21334FB10095750C /* DriverVC.swift */; };
 		832CCDCA211CA2E100F5DCE4 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CCDC9211CA2E100F5DCE4 /* SignInVC.swift */; };
-		837210632132BC5700D227D2 /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837210622132BC5600D227D2 /* GoogleService-Info-2.plist */; };
 		837210652132BF5500D227D2 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837210642132BF5500D227D2 /* FirebaseAuth.framework */; };
 		837210672132BF5500D227D2 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837210662132BF5500D227D2 /* FirebaseCore.framework */; };
 		837572292113B17600190DFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837572282113B17600190DFD /* AppDelegate.swift */; };
@@ -26,9 +27,10 @@
 /* Begin PBXFileReference section */
 		045B88AE126CF13C97E36061 /* Pods-Uber App For Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber App For Driver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber App For Driver/Pods-Uber App For Driver.debug.xcconfig"; sourceTree = "<group>"; };
 		7D8485A9D1641963B1A3FDB0 /* Pods_Uber_App_For_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_App_For_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832B4874213C267F0055E8AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		832B4879213C45050055E8AB /* RoundedButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtons.swift; sourceTree = "<group>"; };
 		832B732F21334FB10095750C /* DriverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
 		832CCDC9211CA2E100F5DCE4 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
-		837210622132BC5600D227D2 /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		837210642132BF5500D227D2 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837210662132BF5500D227D2 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837572252113B17600190DFD /* Uber App For Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber App For Driver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		832B4878213C44DE0055E8AB /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				832B4879213C45050055E8AB /* RoundedButtons.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
 		832CCDC7211CA2BD00F5DCE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +108,7 @@
 		8375721C2113B17600190DFD = {
 			isa = PBXGroup;
 			children = (
-				837210622132BC5600D227D2 /* GoogleService-Info-2.plist */,
+				832B4874213C267F0055E8AB /* GoogleService-Info.plist */,
 				837572342113B17800190DFD /* Info.plist */,
 				837572272113B17600190DFD /* Uber App For Driver */,
 				837572262113B17600190DFD /* Products */,
@@ -129,6 +139,7 @@
 		83926A43212AFAC6000C0DAB /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				832B4878213C44DE0055E8AB /* Design */,
 				83B0DE56213A0C5F005E7033 /* Providers */,
 				83B0DE58213A0C9E005E7033 /* Constants */,
 				83B0DE57213A0C86005E7033 /* Handlers */,
@@ -231,8 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				837572332113B17800190DFD /* LaunchScreen.storyboard in Resources */,
+				832B4875213C26800055E8AB /* GoogleService-Info.plist in Resources */,
 				837572302113B17800190DFD /* Assets.xcassets in Resources */,
-				837210632132BC5700D227D2 /* GoogleService-Info-2.plist in Resources */,
 				8375722E2113B17600190DFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +309,7 @@
 				83D417D02135FE9C007651C6 /* UberHandler.swift in Sources */,
 				837572292113B17600190DFD /* AppDelegate.swift in Sources */,
 				83C1ABCA213419F000E1026E /* Constants.swift in Sources */,
+				832B487A213C45050055E8AB /* RoundedButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "NON.Application.Uber-App-For-Driver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myCompany.Uber-App-For-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,7 +480,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "NON.Application.Uber-App-For-Driver";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myCompany.Uber-App-For-Driver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
